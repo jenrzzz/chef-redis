@@ -21,8 +21,8 @@
 
 
 REDISPORT=<%= @port %>
-EXEC=<%= node.redis.dst_dir %>/redis-server
-CLIEXEC=<%= node.redis.dst_dir %>/redis-cli
+EXEC=<%= node.redis.dst_dir %>/bin/redis-server
+CLIEXEC=<%= node.redis.dst_dir %>/bin/redis-cli
 
 PIDFILE=<%= @pidfile %>
 CONF="<%= @conf_dir %>/<%= @name %>.conf"
